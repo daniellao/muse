@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition, } from '@angular/animations';
+
+import { CollectionService } from './collection.service';
 
 
 
@@ -75,7 +77,7 @@ import { trigger, state, style, animate, transition, } from '@angular/animations
   ]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'muse';
 
   refineSearch = 'closeSearch';
@@ -84,6 +86,12 @@ export class AppComponent {
   sidenav = 'openSidenav';
   toggleSidenav = true;
   toggleAction = 'Sluit';
+
+  constructor(public collection: CollectionService) {}
+
+  ngOnInit(): void {
+      this.collection.get()
+  }
 
   toggleRefine() {
     this.refineSearch = (this.refineSearch === 'openSearch' ? 'closeSearch' : 'openSearch')
