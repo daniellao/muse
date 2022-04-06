@@ -1,0 +1,85 @@
+<div class="d-flex flex-column pt-3 pb-1 justify-content-center align-items-center"
+  style="background-image: url('../assets/header-image.jpg'); background-position: -75% 70%; background-size: cover;">
+  <h1 class="mat-display-4 mr-auto my-3 pb-3 pl-3 pt-2 title" style="color: white;">Muse</h1>
+  <div class="input-group mb-3 w-33 pb-1 pt-2 mt-4">
+    <input type="text" class="form-control" placeholder="Ex. 'ogh'" aria-label="Recipient's username"
+      aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary pt-3" style="background-color: tomato; color:white;" type="button">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <span class="mb-2">
+    <button mat-flat-button (click)="toggleRefine()">
+      Zoekopdracht verfijnen
+    </button>
+  </span>
+</div>
+
+<div [@openCloseSearch]="refineSearch" class="d-flex flex-row justify-content-center bg-light">
+  <mat-form-field *ngIf="refineSearch === 'openSearch'" appearance="outline" class="w-25 px-2 py-3">
+    <mat-select>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field *ngIf="refineSearch === 'openSearch'" appearance="outline" class="w-25 px-2 py-3">
+    <mat-select>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field *ngIf="refineSearch === 'openSearch'" appearance="outline" class="w-25 px-2 py-3">
+    <mat-select>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="d-flex flex-row justify-content-around align-items-center pt-2 mb-3 mt-4 mx-4"
+  style="background-color: floralwhite;">
+  <div class="d-flex mr-2 ml-4 mt-1">
+    <span class="color-picker mr-2" (click)="background ='black'" style="background-color: black"></span>
+    <span class="color-picker mr-2" (click)="background ='lightgreen'" style="background-color: mediumseagreen"></span>
+    <span class="color-picker mr-2" (click)="background ='yellow'" style="background-color: gold"></span>
+  </div>
+
+  <mat-radio-group class="mt-2 py-3" aria-label="Select an option">
+    <mat-radio-button class="ml-2" style="font-size: larger;" value="1">Werken</mat-radio-button>
+    <mat-radio-button class="ml-2" style="font-size: larger;" value="2">Collecties</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-form-field appearance="outline" class="pt-3" style="width:15%">
+    <mat-select>
+      <mat-option value="option">Chronologisch</mat-option>
+    </mat-select>
+    <mat-hint></mat-hint>
+  </mat-form-field>
+
+  <button mat-button class="ml-3 mr-2" style="font-size: larger;">
+    Favorieten
+  </button>
+
+  <mat-slide-toggle class="ml-4 pb-3" [checked]="toggleSidenav" (change)="toggleView()" style="font-size: larger;">
+    {{toggleAction}} gids
+  </mat-slide-toggle>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+</div>
+
+<div class="d-flex flex-row">
+  <div [@openCloseMain]="main" [@pickBackgroundColor]="background" class="ml-4 mr-3"
+    [style.background-color]="background">
+  </div>
+  <div [@openCloseSidenav]="sidenav"
+    [ngClass]="{'p-5 mr-4': sidenav === 'openSidenav', 'p-0 mr-0': sidenav === 'closeSidenav'}" class="bg-light">
+    <div class="label">
+      <div *ngIf="sidenav === 'openSidenav'" class="bg-white h-25 p-4">
+        Sidenav
+      </div>
+    </div>
+  </div>
+</div>
