@@ -1,9 +1,15 @@
-mat-form-field.mat-form-field {
-    font-size: 16px;
+.header {
+    min-height: 175px;
 }
 
-.search-field {
-    background: white;
+.search-bar {
+    margin-top: 37px;
+}
+
+.title {
+    font-family: Cinzel;
+    font-size: 59px;
+    color: white;
 }
 
 .color-picker {
@@ -11,19 +17,4 @@ mat-form-field.mat-form-field {
     height: 40px;
 }
 
-.label {
-    box-shadow: 6px 6px 4px grey;
-}
 
-.title {
-    font-family: Cinzel;
-    /* text-shadow: 1px 1px 4px black */
-}
-
-.h-33 {
-    height: 33%;
-}
-
-.w-33 {
-    width: 33%
-}
