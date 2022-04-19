@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CollectionService } from './collection.service';
-
+import { CollectionService } from './collection/collection.service';
+ 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
