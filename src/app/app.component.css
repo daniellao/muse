@@ -4,8 +4,9 @@ header.page-header {
 
 .page-title {
     font-family: Andada;
-    font-size: 59px;
-    margin: 11px 0 0 19px;
+    font-size: 62px;
+    margin: 12px 0 0 19px;
+    color: rgb(8, 28, 29);
 }
 
 .menu-item {
@@ -14,27 +15,28 @@ header.page-header {
 
 .menu-title {
     font-family: Cabin;
-    font-size: 1.4rem;
-    margin-bottom: 9px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: rgb(8, 28, 29);
 }
 
-.refine-button {
-    height: 58px;
-    width: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    border: 1px solid silver;
+.list-item {
+    font-family: Cabin;
+    color: rgb(39, 59, 60);
 }
+
 
 input[type="search"] {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid silver;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     width: 221px;
     height: 49px;
+    font-family: Cabin;
     font-size: 1.3rem;
+    color: rgb(39, 59, 60);
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -48,12 +50,39 @@ input:focus {
     outline: unset;
 }
 
+
+.refine-button {
+    height: 54px;
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
 .search-button {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 49px;
     border: 1px solid silver;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     border-left: none;
     padding: 12px;
+    background-color: #fff;
+}
+
+.view-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
+    border: 1px solid silver;
+    border-radius: 7px;
+    padding: 12px;
+    margin-right: 5px;
+    background-color: #fff;
 }
