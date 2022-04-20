@@ -6,19 +6,27 @@
     font-family: Andada;
     font-weight: regular;
     font-size: 64px;
-    margin: 12px 0 0 19px;
+    margin: 12px 0 0 20px;
     color: rgb(8, 28, 29);
 }
 
 .menu-item {
-    margin-bottom: 31px;
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
 }
 
 .menu-title {
     font-family: Cabin;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 12px;
     color: rgb(8, 28, 29);
+}
+
+.main {
+    height: 100vh;
+    background-color: #424346;
+    padding: 20px;
 }
 
 .list-item {
@@ -26,15 +34,14 @@
     color: rgb(39, 59, 60);
 }
 
-
 input[type="search"] {
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid silver;
+    border: 1px solid #C6C7C6;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     width: 221px;
-    height: 49px;
+    height: 41px;
     font-family: Cabin;
     font-size: 1.3rem;
     color: rgb(39, 59, 60);
@@ -47,18 +54,18 @@ input[type="search"]::-webkit-search-cancel-button {
 input:focus {
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid silver;
+    border: 1px solid #C6C7C6;
     outline: unset;
 }
 
-
-.refine-button {
-    height: 51px;
-    width: 57px;
-    display: flex;
+.menu-button {
+    height: 41px;
+    width: 49px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid silver;
+    margin-left: 10px;
+    border: 1px solid #C6C7C6;
     border-radius: 7px;
     background-color: #fff;
 }
@@ -67,8 +74,8 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 49px;
-    border: 1px solid silver;
+    height: 41px;
+    border: 1px solid #C6C7C6;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     border-left: none;
@@ -81,9 +88,40 @@ input:focus {
     align-items: center;
     justify-content: center;
     height: 49px;
-    border: 1px solid silver;
+    width: 63px;
+    border: 1px solid #C6C7C6;
     border-radius: 7px;
     padding: 12px;
     margin-right: 5px;
     background-color: #fff;
 }
+
+.sort-button {
+    height: fit-content;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+    padding: 3px 11px 3px 11px;
+    border: 1px solid #C6C7C6;
+    border-radius: 26px;
+    background-color: #fff;
+}
+
+.sort-button-label {
+    margin-left: 5px;
+    font-family: Cabin;
+    font-size: 0.9rem;
+}
+
+.main-menu {
+    padding: 20px;
+}
+
+.collection-menu {
+    border-bottom: 1px solid #AEAFA9 ;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+

@@ -1,7 +1,7 @@
 .card {
     width: 361px;
-    height: 400px;
-    background-color: white;
+    height: 480px;
+    background-color: #CFCCC3;
     border: none;
     padding:10px;
 }
@@ -9,6 +9,7 @@
 .header {
     height: fit-content;
     background-color: white;
+    padding:10px;
     border: none;
 }
 
