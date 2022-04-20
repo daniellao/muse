@@ -1,5 +1,5 @@
 .card {
-    width: 300px;
+    width: 361px;
     height: 400px;
     background-color: white;
     border: none;
@@ -10,7 +10,6 @@
     height: fit-content;
     background-color: white;
     border: none;
-
 }
 
 .title {
@@ -43,6 +42,6 @@
 
 .body {
     height: 300px;
-    background-color: aqua;
-    margin-top: 4px;
+    background-color: black;
+    margin-top: 5px;
 }

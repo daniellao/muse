@@ -1,10 +1,11 @@
-header.page-header {
+.page-header {
     height: 152px;
 }
 
 .page-title {
     font-family: Andada;
-    font-size: 62px;
+    font-weight: regular;
+    font-size: 64px;
     margin: 12px 0 0 19px;
     color: rgb(8, 28, 29);
 }
@@ -52,8 +53,8 @@ input:focus {
 
 
 .refine-button {
-    height: 54px;
-    width: 66px;
+    height: 51px;
+    width: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
