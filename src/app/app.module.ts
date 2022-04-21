@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CollectionModule } from './collection/collection.module';
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
