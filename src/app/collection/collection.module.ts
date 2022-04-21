@@ -4,6 +4,8 @@ import { CollectionGridComponent } from './collection-grid/collection-grid.compo
 import { CollectionListComponent } from './collection-list/collection-list.component';
 import { ObjectCardComponent } from './object-card/object-card.component';
 import { ObjectListEntryComponent } from './object-list-entry/object-list-entry.component';
+import { CollectionGridListComponent } from './collection-grid-list/collection-grid-list.component';
+import { CollectionGridListEntryComponent } from './collection-grid-list-entry/collection-grid-list-entry.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,8 @@ import { ObjectListEntryComponent } from './object-list-entry/object-list-entry.
     CollectionListComponent,
     ObjectCardComponent,
     ObjectListEntryComponent,
+    CollectionGridListComponent,
+    CollectionGridListEntryComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +22,8 @@ import { ObjectListEntryComponent } from './object-list-entry/object-list-entry.
     CollectionListComponent,
     ObjectCardComponent,
     ObjectListEntryComponent,
+    CollectionGridListComponent,
+    CollectionGridListEntryComponent,
   ],
 })
 export class CollectionModule {}

@@ -73,7 +73,7 @@
     </div>
   </div>
   <div class="d-flex flex-row">
-    <div class="col main">
+    <div class="col-sm-9 main">
       <div class="d-flex flex-row align-items-center collection-menu">
         <div class="view-button" (click)="collection.view = 'grid'">
           <i
@@ -108,6 +108,9 @@
       <app-collection-list
         *ngIf="collection.view === 'list'"
       ></app-collection-list>
+    </div>
+    <div class="col-sm-3">
+      <app-collection-grid-list></app-collection-grid-list>
     </div>
   </div>
 </main>
